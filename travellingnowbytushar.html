@@ -1,0 +1,2090 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title><meta charset="utf-8" />
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <style>
+	
+	/*<!-- //new -->*/
+@font-face{
+    font-family:"Material Design Icons";
+           src:url("font/materialdesignicons-webfont.eot?v=3.7.95");
+           src:url("font/materialdesignicons-webfont.eot#iefix&v=3.7.95") format("embedded-opentype"),url("font/materialdesignicons-webfont.woff2?v=3.7.95") format("woff2"),url("font/materialdesignicons-webfont.woff?v=3.7.95") format("woff"),url("font/materialdesignicons-webfont.ttf?v=3.7.95") format("truetype");
+           font-weight:normal;
+           font-style:normal;
+}
+	
+	
+        /*.newcompname {
+            font-family: averta;
+            width: fit-content;
+            color: #1BBC9D !important;
+            font-size: 25px !important;
+            background-color: #1BBC9D;
+            background-image: linear-gradient(45deg, #4D997A, #2ECC71);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            font-weight: bold;
+        }*/
+
+        .page-title {
+    color: #192434;
+    /* font-size: 1.25rem; */
+    margin-bottom: 0;
+    font-family: mlb;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+	text-transform:uppercase !important;
+}
+
+        .topmenuhover:hover {
+            background-image: linear-gradient( -45deg, #281564, #6737FF,#281564) !important;
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            background-size: 250% 250%;
+            animation: gradient 15s ease infinite;
+        }
+
+
+
+        .newcompname {
+            font-family: averta;
+            width: fit-content;
+            color: #1BBC9D !important;
+            font-size: 25px !important;
+            background-color: #1BBC9D;
+            /*background-image: linear-gradient(45deg, #4D997A, #2ECC71);*/
+            background-image: linear-gradient(45deg, #281564, #6737FF) !important;
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        /*scrollbar design*/
+
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #2ECC71;
+        }
+            *::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            *::-webkit-scrollbar-track {
+                background: none;
+            }
+
+            /**::-webkit-scrollbar-thumb {
+                background-color: #2ECC71;
+                border-radius: 10px;
+                width: 3px;
+             
+            }*/
+            *::-webkit-scrollbar-thumb {
+                /*background-color: #2ECC71;*/
+                background: linear-gradient(to bottom, #281564, #6737FF,#6737FF, #281564) !important;
+                border-radius: 5px;
+                width: 2.5px;
+                background-size: 250% 250%;
+                animation: gradient 2.5s ease infinite !important;
+                color: #fff !important;
+                /*border: 3px solid orange;*/
+            }
+
+        .sidebar .nav .nav-item .nav-link i.menu-icon {
+            color: #281564;
+        }
+
+            .sidebar .nav .nav-item .nav-link i.menu-icon:hover {
+                color: #6737FF;
+            }
+
+        @font-face {
+            font-family: mlb;
+            src: url("font/mlb/AgencyFBBlackCondensed.ttf");
+        }
+
+        @font-face {
+            font-family: averta;
+            src: url("font/averta/AvertaDemoPECuttedDemo-Regular.otf");
+        }
+
+        /*tushar upload bar*/
+
+        .upload-bar-body {
+            padding: 25px;
+            background: linear-gradient( -45deg, #BEC3C4, #e1e2dd, #ddf2f5, #eefbf5, #fcfcfc) !important;
+            color: #192434 !important;
+            border-radius: 25px;
+            border: 2.5px solid #281564;
+        }
+
+        .progressX {
+            background: rgba(255,255,255,0.1);
+            justify-content: flex-start;
+            border-radius: 100px;
+            align-items: center;
+            position: relative;
+            padding: 0 5px;
+            display: flex;
+            height: 5px !important;
+            width: 250px;
+        }
+
+        .progressX-value {
+            animation: load 2.5s normal forwards;
+            box-shadow: 0 10px 50px -10px #6737FF;
+            border-radius: 100px;
+            background: #6737FF;
+            height: 5px !important;
+            width: 0;
+        }
+
+        @keyframes load {
+            0% {
+                width: 0;
+            }
+
+            5% {
+                width: 5%;
+            }
+
+            25% {
+                width: 25%;
+            }
+
+            50% {
+                width: 50%;
+            }
+
+            75% {
+                width: 75%;
+            }
+
+            95% {
+                width: 95%;
+            }
+
+            100% {
+                width: 99%;
+            }
+        }
+
+        .bxyVaO {
+            display: flex;
+            overflow: hidden;
+        }
+
+            .bxyVaO > img {
+                display: flex;
+                flex: 1 1 auto;
+            }
+
+                .bxyVaO > img > * {
+                    fill: currentcolor;
+                }
+
+        .iTXuYA {
+            height: 50px;
+        }
+
+        .cxCMfa {
+            padding-bottom: 20px;
+            color: #281564;
+        }
+
+        .loadingimganim {
+            /*animation: zoom-in-zoom-out 1.5s infinite;*/
+            /*box-shadow: 0 10px 50px -10px #6737FF;*/
+            /*height:50px;*/
+            /*width:50px;*/
+            /*width:100%;*/
+            /*animation:zoom-in-zoom-out 1.5s infinite ease-in-out;*/
+            animation: rotation 2.5s infinite linear !important;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        .poweredbyhover:hover {
+            color: #666 !important;
+            border: 0px;
+        }
+
+        .powerbtn:hover {
+            color: #EB002F !important;
+            border-bottom: 0px;
+        }
+
+        @keyframes zoom-in-zoom-out {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(1.1, 1.05);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+
+        .poweredbyhover:hover {
+            color: #777 !important;
+        }
+    </style>
+    
+    <link href="css/TravellingNowStyle.css" rel="stylesheet" />
+    <link href="css/TravellingNowTabStyle.css" rel="stylesheet" />
+    
+    <style>
+        .new-conf1 {
+            color: #ffffff;
+            border: 1px solid;
+            display: inline;
+            -webkit-transition: opacity ease-in-out 5s;
+        }
+
+        .canvas {
+            min-height: 1200px !important;
+        }
+
+        .form-group::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .form-group::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        .form-group::-webkit-scrollbar-thumb {
+            background: #A8A8A8;
+            border-radius: 10px;
+            width: 2px;
+        }
+
+            /* Handle on hover */
+            .form-group::-webkit-scrollbar-thumb:hover {
+                background: #A8A8A8;
+            }
+
+        .table-hover {
+            /*box-shadow: 2px 4px 15px 2px #ccc;
+            padding: 20px;
+            margin-bottom: 15px;*/
+            margin-bottom: 25px;
+        }
+    </style>
+    <style type="text/css">
+        .form-style-10 {
+            width: 99%;
+            padding: 30px;
+            margin: 4px auto;
+            background: #FFF;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+            -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+            -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+        }
+
+            .form-style-10 .inner-wrap {
+                padding: 30px;
+                background: #F8F8F8;
+                border-radius: 6px;
+                margin-bottom: 15px;
+            }
+
+            .form-style-10 h3 {
+                background: #4D997A;
+                padding: 10px 10px 10px 20px;
+                margin: -30px -30px 30px -30px;
+                border-radius: 10px 10px 0 0;
+                -webkit-border-radius: 10px 10px 0 0;
+                -moz-border-radius: 10px 10px 0 0;
+                color: #fff;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+                font: normal 20px 'Bitter', serif;
+                -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+                -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+                box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+                border: 1px solid #257C9E;
+            }
+
+            .form-style-10 h1 > span {
+                display: block;
+                margin-top: 2px;
+                font: 13px Arial, Helvetica, sans-serif;
+            }
+
+            .form-style-10 label {
+                display: inline;
+                font: 13px Arial, Helvetica, sans-serif;
+                color: #000;
+                margin-bottom: 15px;
+            }
+
+            .form-style-10 input[type="select"],
+            .form-style-10 input[type="text"],
+            .form-style-10 input[type="date"],
+            .form-style-10 input[type="datetime"],
+            .form-style-10 input[type="email"],
+            .form-style-10 input[type="number"],
+            .form-style-10 input[type="search"],
+            .form-style-10 input[type="time"],
+            .form-style-10 input[type="url"],
+            .form-style-10 input[type="password"],
+            .form-style-10 textarea,
+            .form-style-10 select {
+                display: block;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                width: 100%;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+                -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+                -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+            }
+
+            .form-style-10 .section {
+                font: normal 20px 'Bitter', serif;
+                color: #4D997A;
+                margin-bottom: 5px;
+            }
+
+                .form-style-10 .section span {
+                    background: #4D997A;
+                    padding: 5px 10px 5px 10px;
+                    position: absolute;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border: 4px solid #fff;
+                    font-size: 14px;
+                    margin-left: -45px;
+                    color: #fff;
+                    margin-top: -3px;
+                }
+
+
+            .form-style-10 input[type="submit"] {
+                background: #4D997A;
+                padding: 8px 20px 8px 20px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                color: #fff;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+                font: normal 30px 'Bitter', serif;
+                -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+                -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+                box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+                border: 1px solid #257C9E;
+                font-size: 15px;
+            }
+
+                .form-style-10 input[type="button"]:hover,
+                .form-style-10 input[type="submit"]:hover {
+                    background: #2A6881;
+                    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+                    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+                    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+                }
+
+            .form-style-10 .privacy-policy {
+                float: right;
+                width: 250px;
+                font: 12px Arial, Helvetica, sans-serif;
+                color: #4D4D4D;
+                margin-top: 10px;
+                text-align: right;
+            }
+
+        .tblrptt {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            outline: none;
+            display: block;
+            width: 85%;
+            padding: 7px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            background: transparent;
+            margin-bottom: 5px;
+            font: 14;
+        }
+    </style>
+
+    
+    <style>
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+            color: #000 !important;
+        }
+
+        .container {
+            margin-top: 30px;
+            padding-left: 5px !important;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Source Sans Pro';
+            font-weight: 700;
+        }
+
+        .fancyTab.active {
+            top: 0;
+            transition: top .2s;
+        }
+
+        .whiteBlock {
+            display: none;
+        }
+
+        .fancyTab.active .whiteBlock {
+            display: block;
+            height: 2px;
+            bottom: -2px;
+            background-color: #fff;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .fancyTab a {
+            /*font-family: 'averta';
+            font-size: 16px;
+            font-weight: 300;
+            transition: .2s;
+            color: #333;*/
+            font-family: averta;
+            font-size: 16px;
+            font-weight: 500;
+            transition: .2s;
+            color: #333;
+        }
+
+        /*.fancyTab .hidden-xs {
+  white-space:nowrap;
+}*/
+
+        .fancyTabs {
+            border-bottom: 1px solid #6737FF !important;
+            margin: 15px 0 0;
+        }
+
+        li.fancyTab a {
+            padding-top: 15px;
+            top: -15px;
+            padding-bottom: 0;
+        }
+
+        li.fancyTab.active a {
+            padding-top: inherit;
+        }
+
+        .fancyTab .fa {
+            font-size: 27px;
+            width: 100%;
+            padding: 3px 0 3px;
+            color: #666;
+        }
+
+        /*.fancyTab.active span {
+            color: #fff; 
+            font-weight: 500;
+        }*/
+
+        .fancyTab a:focus {
+            outline: none;
+        }
+
+        .fancyTabContent {
+            border-color: transparent;
+            /*box-shadow: 0 -2px 0 -1px #fff, 0 0 0 1px #ddd;*/
+            padding: 30px 15px 15px;
+            position: relative;
+            background-color: #fff;
+            height: auto;
+        }
+
+        .nav-tabs > li.fancyTab.active > a,
+        .nav-tabs > li.fancyTab.active > a:focus,
+        .nav-tabs > li.fancyTab.active > a:hover {
+            border-width: 0;
+        }
+
+        .nav-tabs > li.fancyTab:hover {
+            background-color: #f9f9f9;
+            /*box-shadow: 0 0 0 1px #ddd;*/
+        }
+
+
+        .nav.nav-tabs .fancyTab a[data-toggle="tab"] {
+            background-color: transparent;
+            border-bottom: 0;
+        }
+
+
+        .nav-tabs > li.fancyTab > a {
+            margin-right: 0;
+            border-top: 0;
+            padding-bottom: 30px;
+            margin-bottom: -30px;
+        }
+
+        .nav-tabs > li.fancyTab {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+
+
+
+            .nav-tabs > li.fancyTab.active:last-child {
+                /*border-right: 0px solid #ddd;*/
+                box-shadow: 0px 2px 0 0px #fff, 0px 0px 0 1px #ddd;
+            }
+
+        .tabs .nav-tabs li.fancyTab.active a {
+            box-shadow: none;
+            top: 0;
+        }
+
+        /*//change by tushar*/
+
+
+        .fancyTab.active {
+            background: #fff;
+            /*box-shadow: 1px 1px 0 1px #fff, 0 0px 0 1px #ddd, -1px 1px 0 0px #ddd inset;*/
+            /*padding-bottom: 30px;*/
+        }
+
+        .fancyTab {
+            text-align: center;
+            /*padding: 15px 0;*/
+            background-color: #eee;
+            box-shadow: 0 0 0 1px #ddd;
+            top: 15px;
+            transition: top .2s;
+            /*min-width: 270px;*/
+            min-width: 250px;
+        }
+
+        .arrow-down {
+            /*display: none;*/
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 22px solid transparent; /*#2ECC71;*/
+            position: absolute;
+            top: -1px;
+            /*top :114px;*/
+            left: calc(49% - 8px);
+        }
+
+        .arrow-down-inner {
+            width: 0;
+            height: 0;
+            border-left: 18px solid transparent;
+            border-right: 18px solid transparent;
+            border-top: 12px solid #f2edf3;
+            position: absolute;
+            top: -22px;
+            left: -18px;
+        }
+
+        /*.fancyTab.active .arrow-down {
+            display: block;
+        }*/
+
+        @media (max-width: 1200px) {
+
+            .fancyTab .fa {
+                font-size: 36px;
+            }
+
+            .fancyTab .hidden-xs {
+                font-size: 22px;
+            }
+        }
+
+
+        @media (max-width: 1200px) {
+
+            .fancyTab .fa {
+                font-size: 33px;
+            }
+
+            .fancyTab .hidden-xs {
+                font-size: 18px;
+                font-weight: normal;
+            }
+        }
+
+
+        @media (max-width: 1200px) {
+
+            .fancyTab > a {
+                font-size: 18px;
+            }
+
+            .nav > li.fancyTab > a {
+                padding: 15px 0;
+                margin-bottom: inherit;
+            }
+
+            .fancyTab .fa {
+                font-size: 30px;
+            }
+
+            .nav-tabs > li.fancyTab > a {
+                /*border-right: 1px solid transparent;*/
+                padding-bottom: 0;
+            }
+
+            .fancyTab.active .fa {
+                color: #333;
+            }
+
+            .ui-autocomplete {
+                left: 110px !important;
+                z-index: 1000000 !important;
+            }
+        }
+    </style>
+    <script src="Scripts/jquery.signalR-2.3.0.min.js"></script>
+
+
+    
+    
+    <script src="Scripts/jquery-2.1.3.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" />
+
+    <style>
+        .panel-default > .panel-heading {
+            color: #333;
+            background-color: #fff;
+            border-color: #e4e5e7;
+            padding: 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+            .panel-default > .panel-heading a {
+                display: block;
+                padding: 10px 15px;
+                content: "\002B";
+            }
+
+                .panel-default > .panel-heading a:after {
+                    content: "\002B";
+                    position: relative;
+                    top: 1px;
+                    display: inline-block;
+                    font-family: 'Glyphicons Halflings';
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    float: right;
+                    transition: transform .25s linear;
+                    -webkit-transition: -webkit-transform .25s linear;
+                }
+
+                .panel-default > .panel-heading a[aria-expanded="true"] {
+                    background-color: #eee;
+                }
+
+                    .panel-default > .panel-heading a[aria-expanded="true"]:after {
+                        content: "\2212";
+                        -webkit-transform: rotate(180deg);
+                        transform: rotate(180deg);
+                    }
+
+                .panel-default > .panel-heading a[aria-expanded="false"]:after {
+                    content: "\002b" !important;
+                    -webkit-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                }
+
+        .accordion-option {
+            width: 100%;
+            float: left;
+            clear: both;
+            margin: 15px 0;
+        }
+
+            .accordion-option .title {
+                font-size: 20px;
+                font-weight: bold;
+                float: left;
+                padding: 0;
+                margin: 0;
+            }
+
+            .accordion-option .toggle-accordion {
+                float: right;
+                font-size: 16px;
+                color: #6a6c6f;
+            }
+
+                .accordion-option .toggle-accordion:before {
+                    content: "Expand All";
+                }
+
+                .accordion-option .toggle-accordion.active:before {
+                    content: "Collapse All";
+                }
+
+        .collapsed {
+            background-color: #777 !important;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        checkbox label {
+            /*margin-left: 1.75rem !important;
+            font-size: 0.875rem !important;
+            line-height: 1.5 !important;*/
+            padding-left: 10px !important;
+        }
+
+        .form-group label {
+            padding-left: 10px !important;
+        }
+        /*.active, .collapsed:hover {
+  background-color: #555;
+}*/
+        /*.collapsed:after {
+                content: '\002B';
+                color: white;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }*/
+
+        /*CHANGE BY TUSHAR*/
+
+        .fancyTabContent {
+            padding: 25px 5px 5px;
+            background: linear-gradient( 45deg, #192550, #2D3253);
+        }
+
+        .fancyTab.active {
+            /*background: linear-gradient(
+45deg
+, #192550, #2D3253);*/
+            /* padding-bottom: 30px; */
+            background-image: linear-gradient( -45deg, #281564, #6737FF,#281564) !important;
+            background-size: 250% 250%;
+            animation: gradient 15s ease infinite;
+            border: none !important;
+        }
+
+
+
+        .purchase-popup {
+            /*background: #fff;*/
+            background: linear-gradient( 45deg, #192550, #2D3253);
+            padding: 25px 25px;
+            border-radius: 5px;
+            border: 2.5px solid #fff;
+        }
+
+        .card-title {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            text-transform: capitalize;
+            font-family: averta;
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+
+        .card-titletn {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            text-transform: capitalize;
+            font-family: averta;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        .col-12 {
+            /*position: relative;
+    width: 100%;*/
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        .card-title {
+            margin-bottom: 1.5rem;
+        } 
+
+        /*#lnksearch a:hover {
+            background: linear-gradient(-45deg, #281564, #6737FF, #281564);
+            animation: gradient 15s ease infinite;
+    background-size: 500% 500%;
+        }*/
+
+        .btn-facebook {
+            background: linear-gradient(-45deg, #251550, #6737FF);
+            animation: gradient 15s ease infinite;
+            background-size: 250% 250%;
+        }
+
+
+            .btn-facebook:hover, .btn-facebook:focus {
+                /*background: #2d4278;*/
+                background: linear-gradient(-45deg, #281564, #6737FF, #281564);
+                color: #fff !important;
+                animation: gradient 15s ease infinite;
+                background-size: 250% 250%;
+            }
+
+        .card .card-body {
+            padding: 0.5rem 2.5rem;
+        }
+
+        .table thead tr th {
+            border: none;
+        }
+
+        /*change up by tushar start*/
+
+        .nav-tabs > li.fancyTab {
+            margin-right: 10px;
+            margin-bottom: 5px;
+            BORDER-RADIUS: 5PX;
+            line-height: 1.5;
+            border: 2.5px solid #6737FF;
+            height: 45px;
+        }
+
+        /*.fancyTab.active span {
+margin-top: 10px !important;
+}*/
+
+        .fancyTab.active i {
+            color: #25e525;
+        }
+
+        .fancyTab a {
+            padding: 5px;
+        }
+
+        .table th, .table td {
+            white-space: normal !important;
+        }
+
+        .table-fixedheader thead th {
+            /*position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;*/
+            box-shadow: inset 0 -1px 0 #fff;
+            background: #192550;
+        }
+
+            .table-fixedheader thead th:nth-child(3) {
+                background: linear-gradient(to right, #192550, #2D3253);
+            }
+
+            .table-fixedheader thead th:nth-child(n + 4) {
+                background: #2D3253;
+            }
+
+        #uploadeddoc .table-fixedheader thead th {
+            box-shadow: inset 0 -1px 0 #fff;
+            background: #192550;
+        }
+
+            #uploadeddoc .table-fixedheader thead th:nth-child(4) {
+                background: linear-gradient(to right, #192550, #2D3253);
+            }
+
+            #uploadeddoc .table-fixedheader thead th:nth-child(n + 5) {
+                background: #2D3253;
+            }
+
+            /*//new by tushar*/
+
+            .tnmain {
+                width:100% !important;
+                display:flex;
+            }
+
+            .workimg {
+    width: 50px !important;
+    display: inline-block;
+}
+
+            .hidden-xs {
+    display: inline-block!important;
+    margin-top: -2.5px!important;
+    width: 95% !important;
+}
+
+            .nav-tabs > li.fancyTab {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    BORDER-RADIUS: 5PX;
+    line-height: 1.5;
+    border: 2.5px solid #6737FF;
+    height: 50px !important;
+}
+
+            .fancyTab.active span {
+    margin-top: 0.5px!important;
+}
+
+            .coltn-2 {
+                max-width: 20% !important;
+            }
+
+            .content-wrapZ {
+    padding: 2.50rem 4.5rem;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    /* background: linear-gradient(to bottom, #BEC3C4, #e1e2dd) !important; */
+    background: linear-gradient(
+-50deg
+, #BEC3C4, #e1e2dd, #ddf2f5, #eefbf5, #fcfcfc);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+}
+
+            .drbdr {
+                border-bottom:2.5px solid #92cf2c;
+            }
+
+            .flightimg {
+                width:32.5px !important;
+                height:32.5px !important;
+                margin-right:2.5px;
+            }
+
+            /*//by tushar 223*/   
+#clock{
+    font-family:mlb;
+    font-size:25px;
+    background-image:linear-gradient(-45deg, #281564, #6737FF,#281564)!important;
+    background-size:100%;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+    background-size:250% 250%;
+    animation:gradient 15s ease infinite;
+    text-transform:uppercase;
+}
+
+.btntn {
+    background-image: linear-gradient( 
+-45deg ,#281564, #6737FF, #281564) !important;
+    color: #fff !important;
+    background-size: 250% 250%;
+    animation: gradient 15s ease infinite;
+    cursor:pointer;
+    font-family:averta;
+    font-size:12px;
+    padding:10px;
+    margin: 5px;
+    border-radius: 2.5px;
+    text-transform:uppercase;
+}
+
+.btntn:hover {
+    background-image: linear-gradient( 
+-45deg ,#333, #777, #333) !important;
+    background-size: 250% 250%;
+    animation: gradient 15s ease infinite;
+}
+
+.bfowbtn {
+    border:2.5px solid;
+    border-radius:5px;
+    color:#A7F80C;
+    padding:2.5px;
+}
+
+.bfowbtn:hover {
+    color: #fff !important;
+    border: 2.5px solid #EB002F;
+    padding:2.5px;
+}
+
+.bookflightimg {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.bookflightimground {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.departcity {
+    text-transform:capitalize;
+}
+
+.arrivecity {
+    text-transform:capitalize;
+}
+
+.bfowbtnrn {
+    border:2.5px solid;
+    border-radius:5px;
+    color:#A7F80C;
+    padding:2.5px;
+}
+
+.bfowbtnrn:hover {
+    color: #fff !important;
+    border: 2.5px solid #EB002F;
+    padding:2.5px;
+}
+
+.bfowbtnrn:active {
+
+background-image: linear-gradient( 
+-45deg ,#333, #777, #333) !important;
+    background-size: 250% 250%;
+    animation: gradient 15s ease infinite;
+    color:#fff;
+
+}
+
+.flightimgmain {
+    width: 45px !important;
+    height: 45px !important;
+}
+
+
+/* //new4 tushar*/
+.rw-wrapper{
+    position:relative;
+    padding:10px;
+}
+.rw-sentence{
+    margin:0;
+    text-align:center;
+    font-size:45px;
+    font-weight:700;
+    /* text-shadow:1px 1px 1px rgba(255,255,255,.8); */
+    font-family: averta !important;
+}
+.rw-sentencespan {
+    color:#666;
+    font-family: averta !important;
+    text-align:center;
+}
+
+.view img{
+    display:block;position:relative;
+}
+.mobappimg{
+    opacity:.75;
+    transition:opacity 225ms;
+    height:45px;
+    display:inline-block!important;
+    border:0;
+}
+.mobappimg:hover{
+    opacity:1;
+    text-decoration: none !important;
+    border-bottom: 0px solid !important;
+}
+
+.mobappbanner a:hover {
+    text-decoration: none !important;
+    border-bottom: 0px solid !important;
+}
+
+.rh4,.rspan{
+    line-height:140%;
+    max-width:100%;
+    font-family: averta;
+}
+.rh4{
+    font-size:21px;
+    font-weight:700;
+    line-height:40px;
+}
+.Asproof-box{
+    border-radius:10px;
+    padding:2px 5px;
+    -webkit-align-items:center;
+    -ms-flex-align:center;
+    align-items:center;
+    margin:0 10px 25px 10px;
+}
+.Asproof-box h4{
+    font-size:14px;
+    font-weight:300;
+    text-align:center;
+    line-height:110%;
+}
+.Asproof-box h4 span{
+    font-size:18px;
+    font-weight:700;
+    display:block;
+    line-height:140%;
+    color:#333;
+}   
+
+
+/* ne3tushar */
+
+.iconF .inner img{
+    height:60px;
+    text-align:center;
+    margin:auto;
+}
+.inner h4{
+    text-align:center;
+    font-weight:600;
+    color:#666;
+}
+.text-center{
+    text-align:center;
+}
+.flip{
+    -webkit-perspective:800;
+    perspective:800;
+    -moz-perspective:800;
+    position:relative;
+    text-align:center;
+    box-shadow:0px 0px 15px -5px #777;
+    border-radius:10px;
+    background:#fff;
+}
+.flip:hover{
+    box-shadow:0px 0px 15px -5px #333;
+    border-radius:10px;
+    border-bottom:5px solid #6737FF;
+}
+.iconF{
+    height:210px;padding:10px;
+}
+
+.call_support{
+    line-height:3.5;
+    padding-right:38px;
+    font-size:16px;
+}
+.call_support .mdi.mdi-phone{
+    color:#70cb39;
+    font-size:20px;
+}
+.menu_top a
+{
+    color:#666;
+}
+.btn-rounded1{
+    float:right;
+}
+.support-ct{
+    padding:0;
+    position:absolute;
+    top:35px;
+    padding-left:15px;
+    margin:0;
+    color:#93ce2c;
+    font-size:12px;
+    color:#333;
+}
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <form id="form1">
+        <div>
+            <div class="container-scroller">
+                <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+                    
+                    <div class="navbar-menu-wrapper d-flex align-items-stretch" style="width: 100%">
+                        <a class="navbar-brand brand-logo" href="#">
+                            <h1>
+                                <img class="flightimgmain" src="TravellingNowImg/5776514.png" />
+                                <span id="ladminname" class="newcompname">Travelling Now</span></h1>
+
+                        </a>
+                        <div class="search-field d-none d-md-block">
+                        </div>
+                        <ul class="navbar-nav navbar-nav-right">
+<li style="margin-top: -18px;padding: 5px;">
+    <i class="mdi mdi-phone" aria-hidden="true"></i>+1000 100 0000 00
+        <p class="support-ct" style="color:#666;font-size: 12px;">Mon-Sat 11 AM - 7 PM</p>
+    
+</li>
+                            <li class="nav-item nav-profile dropdown">
+                                <a class="btn btntn" id="btntravellingnewac" title="Create Account!">Create Account</a>
+                            </li>
+
+
+
+                            <li class="nav-item nav-logout d-none d-lg-block">
+                                <a class="btn btntn" id="btntravellinglogin" title="Click To Login!">Login</a>
+                            </li>
+
+                            <li>
+                                
+                            </li>
+                        </ul>
+                        <br />
+                        <br />
+
+                    </div>
+                </nav>
+                <div class="container-fluid page-body-wrapper">                    
+
+    <div class="tnmain">        
+        <div class="content-wrapZ">
+
+            <section class="rw-wrapper" style="margin-bottom:25px;">
+                <h2 class="rw-sentence"><label>Get The Best Of <span class="newcompname" style="font-size: 45px !important; font-weight: 700">Travelling</span></label><br/>
+                    <span class="rw-sentencespan" style="font-size: 25px; font-weight: 700">
+                        Find Great Deals on Flight Tickets & Much More</span>
+                </h2>
+
+                <center>
+  <div class="mobappbanner">
+                    
+      <a href="" target="_blank">
+                    <img src="TravellingNowImg/GooglePlay.svg" class="mobappimg">
+          </a>
+
+      <a href="" target="_blank">
+                    <img src="TravellingNowImg/iosAppStore.svg" class="mobappimg" style="height: 48px;">
+          </a>
+                </div>       
+                    <div column="" class="Asproof-box rdiv" style=" margin-top: 5px;margin-bottom: 0px;">
+   
+<img style="width: 125px;" src="TravellingNowImg/stars477.png" width="164" height="22">
+<h4 class="rh4" style="margin-top: 0px;margin-bottom: 0px;">
+<span class="rspan">4.7 Stars</span>Google Play Store &amp; iOS App Store</h4></div>
+                </center>                            
+            </section>
+
+            <section style="margin-bottom:25px;">
+                <center>
+                <h2>
+                    <span class="rw-sentencespan" style="font-size: 25px; font-weight: 700">
+                        Trending Destinations</span>
+                </h2>
+            </center>
+            <div class="row pb-5">
+                <div class="col-sm-4">
+                    <div class="flip">
+                        <div class="iconF">
+                            <div class="face front">
+                                <div class="inner">
+                                    <img class="img-responsive" src="TravellingNowImg/2907223.png" alt="Card image cap">
+                                    <h4 class="card-titletn text-center">The Most Popular Summer Travel Destinations In 2021, According To Flight Data</h4>
+                                    <p align="center">As Americans venture back out and flight deals persist, some clear summer travel hotspots are emerging for 2021.</p>
+                                    <a>Learn More</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="flip">
+                        <div class="iconF">
+                            <div class="face front">
+                                <div class="inner ">
+                                    <img class="img-responsive" src="TravellingNowImg/776520.png" alt="Card image cap">
+                                    <h4 class="card-titletn text-center">10 Best Places To Travel Europe In 2021</h4>
+                                    <p align="center">When it comes to the best holiday destinations to travel Europe this year, we’ve looked to densely forested islands and sustainable overlooked regions across the continent.</p>
+                                <a>Learn More</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="flip">
+                        <div class="iconF">
+                            <div class="face front">
+                                <div class="inner">
+                                    <img class="img-responsive" src="TravellingNowImg/620765.png" alt="Card image cap">
+                                    <h4 class="card-titletn text-center">11 Top Trending Travel Destinations For 2021 </h4>
+                                    <p align="center">
+                                        Expedia’s 2021 Travel Trends report breaks down the most-searched destinations which should be top trending destinations in this year. 
+                                    </p>
+                                    <a>Learn More</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+            <div class="page-header">
+                <h3 class="page-title">
+                    <span class="page-title-icon bg-gradient-primary text-white mr-2" style="background: linear-gradient(45deg, #281564, #192434) !important; box-shadow: none !important">
+                        <i class="mdi mdi-airplane" style="letter-spacing: normal !important"></i>
+                    </span>Book Flights
+                </h3>
+                <div class="col-lg-4">
+                    <span id="clock" style="margin-left: 25%;"></span>
+                </div>
+            </div>
+            <div>
+             
+
+                  
+
+                <section id="fancyTabWidget" class="tabs t-tabs">
+                    <ul class="nav nav-tabs fancyTabs" role="tablist">
+                        <li class="tab fancyTab active" id="li0">
+                            <div class="" id="divtab1" style="display: block;">
+                                <div class=""></div>
+                            </div>
+                            <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0" onclick="showdiv(1)">
+                                
+                                
+                                
+                                <span class="hidden-xs">One Way
+                                    <img class="workimg" src="TravellingNowImg/5776665.png" /></span>
+                                
+                            </a>
+
+                        </li>
+
+                        <li class="tab fancyTab" id="li1">
+                            <div class="" id="divtab2" style="display: none!important">
+                                <div class=""></div>
+                            </div>
+                            <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0" onclick="showdiv(2)">
+                                
+                                
+                                
+                                <span class="hidden-xs">Round Trip
+                                    <img class="workimg" src="TravellingNowImg/5776811.svg" /></span>
+                                
+                            </a>
+
+
+                        </li>
+
+                    </ul>
+                    <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+                        <div class="tab-pane active" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                            <div class="col-lg-12" id="proBanner" >
+                                <div class="col-lg-12">
+
+                                    <div class="row d-flex align-items-center purchase-popup" style="padding-bottom: 25px; color: #fff;">
+                                        <div class="col-12">
+                                            <h4 class="card-title" style="margin-top: -10px;">Search Flights</h4>
+                                        </div>
+
+                                        <div class="col-12" style="margin-top: -10px;">
+
+                                            <div class="col-2" style="float: left">
+                                                <label>Departure</label>
+                                                <input type="text" id="txtDeparturenameoneway" class="form-control" placeholder="Enter City" />
+                                            </div>
+                                            <div class="col-2" style="float: left">
+                                                <label>Arrival</label>
+                                                <input type="text" id="txtArrivalnameoneway" class="form-control" placeholder="Enter City" />
+                                            </div>
+
+                                            <div class="col-2 coltn-2" style="float: left">
+                                                <label for="DepartureDate">Departure Date</label>
+                                                <input type="date" class="form-control" name="DepartureDate" id="DepartureDateoneway">
+                                               
+                                            </div>
+
+                                            <div class="col-2" style="float: left;max-width:11%;">
+                                                <label>Travellers</label>
+                                                <select id="drpTravellersidoneway" class="form-control">
+    <option selected="selected" value="0">Select</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>	
+</select>
+                                            </div>
+                                            <div class="col-2" style="float: left;">
+                                                <label>Class </label>
+                                                <select id="drptnClassoneway" class="form-control">
+	<option selected="selected" value="selected">Select</option>
+	<option value="Economy">Economy</option>
+	<option value="Premium">Premium Economy</option>
+	<option value="Business">Business</option>
+
+</select>
+                                            </div>
+                                            <div class="col-2" style="float: right;">
+                                                <a onclick="showsearchloader();" id="lnksearchoneway" class="btn btn-social-icon btn-facebook" title="Click to Search!" style="padding-top: 15px; margin-top: 20px;">
+                                    <i class="mdi mdi-account-search-outline" style="color:#fff;font-size:21px"></i>
+                                                </a>
+                                               
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Flights from <span id="departcity" class="departcity">Delhi</span> 
+                                    to 
+                                    <span id="arrivecity" class="arrivecity">Bengaluru</span></h4>                                    
+                                    <div id="flightschedulesoneway" class="tblscroller">
+                                        <div>
+	<table class="table table-hover parent table-fixedheader" id="tblflightsdetoneway" style="border-collapse:collapse;">
+		<thead>
+			<tr>
+				<th>Sr.No.</th>
+                <th>Flight Name</th>
+                <th>Departure</th>
+                <th style="text-align:center;">Duration</th>
+                <th>Arrival</th>
+                <th>Price</th>
+                <th>&nbsp;</th>
+			</tr>
+		</thead>
+        <tbody>
+			<tr>
+			<td>1</td>
+            <td><img class="flightimg" src="TravellingNowImg/i5.png" />AirAsia</td>
+            <td><span style="font-size:18px;color: #A7F80C;">04:55</span><br /><span id="tddepartcity" class="departcity">Delhi</span></td>
+            <td style="text-align:center;"><label class="drbdr">06 h 35 m</label><br/><label style="font-size:12px;">1 stop via Kolkata</label></td>
+            <td><span style="font-size:18px;color: #A7F80C;">11:30</span><br /><span id="tdarrivecity" class="arrivecity">Bengaluru</span></td>
+            <td style="font-size:20px;color: #A7F80C;">₹ 7,422</td>
+                <td>
+                    <a id="btnbookflightoneway" class="btn bfowbtn">
+                        <img class="bookflightimg" src="TravellingNowImg/5776395.png" />
+                        Book Flight
+                    </a>
+                </td>
+			</tr>
+            <tr>
+                <td>2</td>
+                <td><img class="flightimg" src="TravellingNowImg/g8.png" />Go First</td>
+                <td><span style="font-size:18px;color: #A7F80C;">08:40</span><br /><span id="tddepartcity" class="departcity">Delhi</span></td>
+                <td style="text-align:center;"><label class="drbdr">02 h 35 m</label><br /><label style="font-size:12px;">Non stop</label></td>
+                <td><span style="font-size:18px;color: #A7F80C;">11:15</span><br /><span id="tdarrivecity" class="arrivecity">Bengaluru</span></td>
+                <td style="font-size:20px;color: #A7F80C;">₹ 7,524</td>
+                <td>
+                    <a id="btnbookflightoneway" class="btn bfowbtn">
+                        <img class="bookflightimg" src="TravellingNowImg/5776395.png" />
+                        Book Flight
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img class="flightimg" src="TravellingNowImg/6e.png" />IndiGo</td>
+                <td><span style="font-size:18px;color: #A7F80C;">06:05</span><br /><span id="tddepartcity" class="departcity">Delhi</span></td>
+                <td style="text-align:center;"><label class="drbdr">03 h 10 m</label><br /><label style="font-size:12px;">Non stop</label></td>
+                <td><span style="font-size:18px;color: #A7F80C;">09:15</span><br /><span id="tdarrivecity" class="arrivecity">Bengaluru</span></td>
+                <td style="font-size:20px;color: #A7F80C;">₹ 7,825</td>
+                <td>
+                    <a id="btnbookflightoneway" class="btn bfowbtn">
+                        <img class="bookflightimg" src="TravellingNowImg/5776395.png" />
+                        Book Flight
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img class="flightimg" src="TravellingNowImg/ai.png" />Air India</td>
+                <td><span style="font-size:18px;color: #A7F80C;">13:30</span><br /><span id="tddepartcity" class="departcity">Delhi</span></td>
+                <td style="text-align:center;"><label class="drbdr">02 h 45 m</label><br /><label style="font-size:12px;">Non stop</label></td>
+                <td><span style="font-size:18px;color: #A7F80C;">16:15</span><br /><span id="tdarrivecity" class="arrivecity">Bengaluru</span></td>
+                <td style="font-size:20px;color: #A7F80C;">₹ 8,425</td>
+                <td>
+                    <a id="btnbookflightoneway" class="btn bfowbtn">
+                        <img class="bookflightimg" src="TravellingNowImg/5776395.png" />
+                        Book Flight
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><img class="flightimg" src="TravellingNowImg/uk.png" />Vistara</td>
+                <td><span style="font-size:18px;color: #A7F80C;">14:10</span><br /><span id="tddepartcity" class="departcity">Delhi</span></td>
+                <td style="text-align:center;"><label class="drbdr">02 h 45 m</label><br /><label style="font-size:12px;">Non stop</label></td>
+                <td><span style="font-size:18px;color: #A7F80C;">16:55</span><br /><span id="tdarrivecity" class="arrivecity">Bengaluru</span></td>
+                <td style="font-size:20px;color: #A7F80C;">₹ 8,622</td>
+                <td>
+                    <a id="btnbookflightoneway" class="btn bfowbtn">
+                        <img class="bookflightimg" src="TravellingNowImg/5776395.png" />
+                        Book Flight
+                    </a>
+                </td>
+            </tr>
+            
+		</tbody>
+	</table>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane " id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+                            <div class="col-lg-12" id="proBanner2" >
+                                <div class="col-lg-12">
+
+                                    <div class="row d-flex align-items-center purchase-popup" style="padding-bottom: 25px; color: #fff;">
+                                        <div class="col-12">
+                                            <h4 class="card-title" style="margin-top: -10px;">Search Flights</h4>
+                                        </div>
+                                                <div class="col-12" style="margin-top: -10px;">
+
+                                                    <div class="col-2" style="float: left">
+                                                        <label>Departure</label>
+                                                        <input type="text" id="txtDeparturenameround" class="form-control" placeholder="Enter City" />
+                                                    </div>
+                                                    <div class="col-2" style="float: left">
+                                                        <label>Arrival</label>
+                                                        <input type="text" id="txtArrivalnameround" class="form-control" placeholder="Enter City" />
+                                                    </div>
+
+                                                    <div class="col-2 coltn-2" style="float: left">
+                                                        <label for="DepartureDateround">Departure Date</label>
+                                                        <input type="date" class="form-control" name="DepartureDate" id="DepartureDateround">
+
+                                                    </div>
+
+                                                    <div class="col-2 coltn-2" style="float: left">
+                                                        <label for="ReturnDate">Return Date</label>
+                                                        <input type="date" class="form-control" name="ReturnDate" id="ReturnDate">
+
+                                                    </div>
+
+                                                    <div class="col-2" style="float: left;">
+                                                        <label>Travellers</label>
+                                                        <select id="drpTravellersidround" class="form-control">
+                                                            <option selected="selected" value="0">Select</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+
+                                                        </select>
+                                                        <!--<label>Class </label>-->
+                                                        <!--<input type="radio" id="rbEconomy" value="Economy"/>
+                                                        <label style="font-size:12px;display:inline-block;">Economy</label>-->
+                                                        <!--<input type="radio" id="rbPremium" value="Premium" />
+                                                        <label style="font-size:10px;display:inline-block;">Premium Economy</label><br />
+                                                        <input type="radio" id="rbBusiness" value="Business" />
+                                                        <label style="font-size:10px;display:inline-block;">Business</label>-->
+                                                        <!--<select id="drptnClassround" class="form-control">
+                                                            <option selected="selected" value="selected">Select</option>
+                                                            <option value="Economy">Economy</option>
+                                                            <option value="Premium">Premium Economy</option>
+                                                            <option value="Business">Business</option>
+
+                                                        </select>-->
+                                                    </div>
+                                                    <!--<div class="col-2" style="float: left;">
+                                                        
+                                                    </div>-->
+                                                    <div class="col-1" style="float: right;">
+                                                        <a onclick="showsearchloader();" id="lnksearchround" class="btn btn-social-icon btn-facebook" title="Click to Search!" style="padding-top: 15px; margin-top: 20px;">
+                                                            <i class="mdi mdi-account-search-outline" style="color:#fff;font-size:21px"></i>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <!--<h4 class="card-title">
+                                        Flights from <span id="departcityround" class="departcity">Delhi</span>
+                                        to
+                                        <span id="departcityround" class="arrivecity">Bengaluru</span>
+                                    </h4>-->
+                                    <center>
+                                        <div>
+                                            <div>
+                                                <div style="width:48%;float:left;padding:5px;">
+                                                    <h4 class="card-title">
+                                                        Flights from <span id="departcityround" class="departcity">Delhi</span>
+                                                        to
+                                                        <span id="departcityround" class="arrivecity">Bengaluru</span>
+                                                        <br />
+                                                        <span id="departdateround"></span>
+                                                    </h4>
+                                                    <table class="table table-hover parent table-fixedheader" id="tblflightsdetrounddepart" style="border-collapse:collapse;">
+                                                        <thead>
+                                                            <tr>
+                                                                <!--<th>Sr.No.</th>-->
+                                                                <th>Flights</th>
+                                                                <th>Departure</th>
+                                                                <th style="text-align:center;">Duration</th>
+                                                                <th>Arrival</th>
+                                                                <th>Price</th>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <!--<td>1</td>-->
+                                                                <td><img class="flightimg" src="TravellingNowImg/i5.png" />AirAsia</td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">04:55</span><br /><span id="tddepartcity" style="font-size: 12px;" class="departcity">Delhi</span></td>
+                                                                <td style="text-align:center;font-size: 11px;"><label class="drbdr">06 h 35 m</label><br /><label style="font-size:10px;">1 stop via Kolkata</label></td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">11:30</span><br /><span id="tdarrivecity" style="font-size: 12px;" class="arrivecity">Bengaluru</span></td>
+                                                                <td style="font-size:15px;color: #A7F80C;">₹ 7,422</td>
+                                                                <td>
+                                                                    <a class="btn bfowbtnrn">
+                                                                        <img class="bookflightimground" src="TravellingNowImg/5776652.png" />
+                                                                        Select
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <!--<td>2</td>-->
+                                                                <td><img class="flightimg" src="TravellingNowImg/g8.png" />Go First</td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">08:40</span><br /><span id="tddepartcity" style="font-size: 12px;" class="departcity">Delhi</span></td>
+                                                                <td style="text-align:center;font-size: 11px;"><label class="drbdr">02 h 35 m</label><br /><label style="font-size:10px;">Non stop</label></td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">11:15</span><br /><span id="tdarrivecity" style="font-size: 12px;" class="arrivecity">Bengaluru</span></td>
+                                                                <td style="font-size:15px;color: #A7F80C;">₹ 7,524</td>
+                                                                <td>
+                                                                    <a class="btn bfowbtnrn">
+                                                                        <img class="bookflightimground" src="TravellingNowImg/5776652.png" />
+                                                                        Select
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <!--<td>3</td>-->
+                                                                <td><img class="flightimg" src="TravellingNowImg/6e.png" />IndiGo</td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">06:05</span><br /><span id="tddepartcity" style="font-size: 12px;" class="departcity">Delhi</span></td>
+                                                                <td style="text-align:center;font-size: 11px;"><label class="drbdr">03 h 10 m</label><br /><label style="font-size:10px;">Non stop</label></td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">09:15</span><br /><span id="tdarrivecity" style="font-size: 12px;" class="arrivecity">Bengaluru</span></td>
+                                                                <td style="font-size:15px;color: #A7F80C;">₹ 7,825</td>
+                                                                <td>
+                                                                    <a class="btn bfowbtnrn">
+                                                                        <img class="bookflightimground" src="TravellingNowImg/5776652.png" />
+                                                                        Select
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <!--<td>4</td>-->
+                                                                <td><img class="flightimg" src="TravellingNowImg/ai.png" />Air India</td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">13:30</span><br /><span id="tddepartcity" style="font-size: 12px;" class="departcity">Delhi</span></td>
+                                                                <td style="text-align:center;font-size: 11px;"><label class="drbdr">02 h 45 m</label><br /><label style="font-size:10px;">Non stop</label></td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">16:15</span><br /><span id="tdarrivecity" style="font-size: 12px;" class="arrivecity">Bengaluru</span></td>
+                                                                <td style="font-size:15px;color: #A7F80C;">₹ 8,425</td>
+                                                                <td>
+                                                                    <a class="btn bfowbtnrn">
+                                                                        <img class="bookflightimground" src="TravellingNowImg/5776652.png" />
+                                                                        Select
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <!--<td>5</td>-->
+                                                                <td><img class="flightimg" src="TravellingNowImg/uk.png" />Vistara</td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">14:10</span><br /><span id="tddepartcity" style="font-size: 12px;" class="departcity">Delhi</span></td>
+                                                                <td style="text-align:center;font-size: 11px;"><label class="drbdr">02 h 45 m</label><br /><label style="font-size:10px;">Non stop</label></td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">16:55</span><br /><span id="tdarrivecity" style="font-size: 12px;" class="arrivecity">Bengaluru</span></td>
+                                                                <td style="font-size:15px;color: #A7F80C;">₹ 8,622</td>
+                                                                <td>
+                                                                    <a class="btn bfowbtnrn">
+                                                                        <img class="bookflightimground" src="TravellingNowImg/5776652.png" />
+                                                                        Select
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+
+                                            <div>
+
+                                                <div style="width:48%;float:left;padding:5px;">
+                                                    <h4 class="card-title">
+                                                        Flights from <span id="departcityroundrtn" class="departcityrtn">Bengaluru</span>
+                                                        to
+                                                        <span id="departcityroundrtn" class="arrivecityrtn">Delhi</span>
+                                                        <br/>
+                                                        <span id="returndateround"></span>
+                                                    </h4>
+                                                    <table class="table table-hover parent table-fixedheader" id="tblflightsdetroundreturn" style="border-collapse:collapse;">
+                                                        <thead>
+                                                            <tr>
+                                                                <!--<th>Sr.No.</th>-->
+                                                                <th>Flights</th>
+                                                                <th>Departure</th>
+                                                                <th style="text-align:center;">Duration</th>
+                                                                <th>Arrival</th>
+                                                                <th>Price</th>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <!--<td>1</td>-->
+                                                                <td><img class="flightimg" src="TravellingNowImg/i5.png" />AirAsia</td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">05:45</span><br /><span id="tddepartcity" style="font-size: 12px;" class="departcity">Bengaluru</span></td>
+                                                                <td style="text-align:center;font-size: 11px;"><label class="drbdr">05 h 10 m</label><br /><label style="font-size:10px;">1 stop via Goa</label></td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">10:55</span><br /><span id="tdarrivecity" style="font-size: 12px;" class="arrivecity">Delhi</span></td>
+                                                                <td style="font-size:15px;color: #A7F80C;">₹ 7,485</td>
+                                                                <td>
+                                                                    <a class="btn bfowbtnrn">
+                                                                        <img class="bookflightimground" src="TravellingNowImg/5776652.png" />
+                                                                        Select
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <!--<td>2</td>-->
+                                                                <td><img class="flightimg" src="TravellingNowImg/g8.png" />Go First</td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">06:00</span><br /><span id="tddepartcity" style="font-size: 12px;" class="departcity">Bengaluru</span></td>
+                                                                <td style="text-align:center;font-size: 11px;"><label class="drbdr">02 h 40 m</label><br /><label style="font-size:10px;">Non stop</label></td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">08:40</span><br /><span id="tdarrivecity" style="font-size: 12px;" class="arrivecity">Delhi</span></td>
+                                                                <td style="font-size:15px;color: #A7F80C;">₹ 7,487</td>
+                                                                <td>
+                                                                    <a id="btnbookflightround" class="btn bfowbtnrn">
+                                                                        <img class="bookflightimground" src="TravellingNowImg/5776652.png" />
+                                                                        Select
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <!--<td>3</td>-->
+                                                                <td><img class="flightimg" src="TravellingNowImg/6e.png" />IndiGo</td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">05:30</span><br /><span id="tddepartcity" style="font-size: 12px;" class="departcity">Bengaluru</span></td>
+                                                                <td style="text-align:center;font-size: 11px;"><label class="drbdr">02 h 50 m</label><br /><label style="font-size:10px;">Non stop</label></td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">08:20</span><br /><span id="tdarrivecity" style="font-size: 12px;" class="arrivecity">Delhi</span></td>
+                                                                <td style="font-size:15px;color: #A7F80C;">₹ 7,488</td>
+                                                                <td>
+                                                                    <a class="btn bfowbtnrn">
+                                                                        <img class="bookflightimground" src="TravellingNowImg/5776652.png" />
+                                                                        Select
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <!--<td>4</td>-->
+                                                                <td><img class="flightimg" src="TravellingNowImg/ai.png" />Air India</td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">17:45</span><br /><span id="tddepartcity" style="font-size: 12px;" class="departcity">Bengaluru</span></td>
+                                                                <td style="text-align:center;font-size: 11px;"><label class="drbdr">02 h 45 m</label><br /><label style="font-size:10px;">Non stop</label></td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">20:30</span><br /><span id="tdarrivecity" style="font-size: 12px;" class="arrivecity">Delhi</span></td>
+                                                                <td style="font-size:15px;color: #A7F80C;">₹ 8,225</td>
+                                                                <td>
+                                                                    <a class="btn bfowbtnrn">
+                                                                        <img class="bookflightimground" src="TravellingNowImg/5776652.png" />
+                                                                        Select
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <!--<td>5</td>-->
+                                                                <td><img class="flightimg" src="TravellingNowImg/uk.png" />Vistara</td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">19:40</span><br /><span id="tddepartcity" style="font-size: 12px;" class="departcity">Bengaluru</span></td>
+                                                                <td style="text-align:center;font-size: 11px;"><label class="drbdr">02 h 45 m</label><br /><label style="font-size:10px;">Non stop</label></td>
+                                                                <td><span style="font-size:13px;color: #A7F80C;">22:25</span><br /><span id="tdarrivecity" style="font-size: 12px;" class="arrivecity">Delhi</span></td>
+                                                                <td style="font-size:15px;color: #A7F80C;">₹ 8,322</td>
+                                                                <td>
+                                                                    <a class="btn bfowbtnrn">
+                                                                        <img class="bookflightimground" src="TravellingNowImg/5776652.png" />
+                                                                        Select
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </center>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12">
+                            <div class="row d-flex align-items-center purchase-popup" style="padding-bottom: 25px; color: #fff;border:5px solid #6737FF;">
+                                <div class="col-12">
+                                    <h4 class="card-title" style="margin-top: -10px;">Selected Flights</h4>
+                                </div>
+                                        <div class="col-12" style="margin-top: -10px;">
+
+                                            <div class="col-4" style="float: left">
+                                                <label>Departure - </label>
+                                                <img style="border-radius: 100%;" class="flightimg flightdepartimg" src="TravellingNowImg/i5.png" />
+                                                <label class="flightnameselecteddepart">AirAsia</label>
+                                                <div>
+                                                <p><span style="font-size: 15px;color: #A7F80C;" class="fromtimedepart">04:55 </span><label> → </label><span style="font-size: 15px;color: #A7F80C;" class="totimedepart"> 11:30</span></p>
+                                            </div>
+                                            <span class="departmoney">₹ 7,422</span>
+                                            </div>
+                                            <div class="col-4" style="float: left">
+                                                <label>Return - </label>
+                                                <img style="border-radius: 100%;" class="flightimg flightreturnimg" src="TravellingNowImg/uk.png" />
+                                                <label class="flightnameselectedreturn">Vistara</label>
+                                                <div>
+                                                <p><span style="font-size: 15px;color: #A7F80C;" class="fromtimedereturn">19:40 </span><label> → </label><span style="font-size: 15px;color: #A7F80C;" class="totimereturn"> 22:25</span></p>
+                                            </div>
+                                            <span class="returnmoney">₹ 8,322</span>
+                                            </div>
+
+                                            <div class="col-2" style="float: left">
+                                                <label>Total</label>
+                                                <br/>
+                                                <span style="font-size: 25px;color: #A7F80C;" class="finalmoney">₹ 15,744</span>
+
+                                            </div>
+                                            <div class="col-2" style="float: right;">
+                                                <a id="btnbookflightoneway" class="btn bfowbtn" style="color: #A7F80C;padding:10px;">
+                                                    <img class="bookflightimg" src="TravellingNowImg/5776395.png">
+                                                    Book Flight
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                       
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showdiv(mode) {
+            if (mode == 1) {
+                // alert(1);
+                $("#divtab1").attr("style", "display:block;");
+                $("#divtab2").attr("style", "display:none");
+            }
+            else {
+                //  alert(2);
+                $("#divtab1").attr("style", "display:none;");
+                $("#divtab2").attr("style", "display:block;");
+            }
+        }
+
+    </script>
+
+    <script>
+        function showsearchloader() {
+            $("#searchingloader").css("display", "");
+            setTimeout(function () {
+                $("#searchingloader").css("display", "none");
+            }, 5500);
+            var departcity = $("#txtDeparturenameoneway").val();
+            $(".departcity").html(departcity);
+            var arrivalcity = $("#txtArrivalnameoneway").val();
+            $(".arrivecity").html(arrivalcity);
+        }
+
+
+        $('.bfowbtn').click(function () {
+            $("#pleasewaitloader").css("display", "");
+            setTimeout(function () {
+                $("#pleasewaitloader").css("display", "none");
+            }, 5000);
+        });
+
+        $('.bfowbtnrn').click(function () {
+
+        });
+
+    </script>
+
+
+                </div>
+                
+                <footer class="footer">
+                    <div class="container-fluid clearfix">
+                            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+                                <a href="" class="poweredbyhover" target="_blank">
+                                    <img src="" width="25" />
+                                    Created by Tushar Rohilla
+                                </a>
+                            </span>
+                    </div>
+                </footer>
+
+
+            </div>
+            
+
+
+            <div id="pleasewaitloader" style="display: none;">
+                <div class="modal-content">
+                    <div class="upload-bar-body" style="top: 25%; left: 45%; position: fixed; z-index: 10000;">
+                        <div class="sc-1rkezdt-9 cxCMfa">
+                            <div class="sc-2xfn8l-0 bxyVaO sc-6w1ep9-0 iTXuYA">
+                                <img class="loadingimganim" src="TravellingNowImg/4327084.svg" />
+                            </div>
+                        </div>
+                        <div class="progressX">
+                            <div class="progressX-value"></div>
+                        </div>
+                        <div class="text-center margin-top10px">
+                            <span class="" style="letter-spacing: 5px">Booking Flights.....</span>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+
+            <div id="searchingloader" style="display: none;">
+                <div class="modal-content">
+                    <div class="upload-bar-body" style="top: 25%; left: 45%; position: fixed; z-index: 10000;">
+                        <div class="sc-1rkezdt-9 cxCMfa">
+                            
+                            <div class="sc-2xfn8l-0 sc-6w1ep9-0 iTXuYA">
+                                <CENTER>
+                                <img class="loadingimganim flightimgmain" src="TravellingNowImg/5776395.png" />
+                            </CENTER>
+                            </div>
+                        </div>
+                        <div class="progressX">
+                            <div class="progressX-value"></div>
+                        </div>
+                        <div class="text-center margin-top10px">
+                            <span class="" style="letter-spacing: 5px">Searching Flights.....</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <script>
+            $(document).ready(function () {
+                $("#txtDeparturenameoneway").val("Delhi");
+                $("#txtArrivalnameoneway").val("Bengaluru");
+                var now = new Date();
+
+                var day = ("0" + now.getDate()).slice(-2);
+                var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+                var today = now.getFullYear() + "-" + (month) + "-" + (day);
+
+                $("#DepartureDateoneway").val(today);
+                $("#drpTravellersidoneway").val("1");
+                $("#drptnClassoneway").val("Economy");
+
+var fulltodaydaydate = new Date().toLocaleString('en-US', {
+                weekday: 'short',
+                month: 'short',
+                day: '2-digit', 
+                year: 'numeric'
+            });
+
+            var todayDate = new Date()
+
+var newDate = todayDate.setDate( todayDate.getDate() + 4);// adding 4 days
+
+var dt=new Date (newDate);
+
+var fullrtndaydate = dt.toLocaleString('en-US', {
+                weekday: 'short',
+                month: 'short',
+                day: '2-digit', 
+                year: 'numeric'
+            });
+
+                $("#departdateround").html(fulltodaydaydate);
+                $("#returndateround").html(fullrtndaydate);
+            });
+
+            
+
+        </script>
+
+        <script type="text/javascript">
+        var clockElement = document.getElementById('clock');
+
+        function clock() {
+            clockElement.textContent = new Date().toLocaleString('en-US', {
+                weekday: 'short',
+                month: 'long',
+                day: '2-digit', 
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        setInterval(clock, 000);
+        </script>
+    </form>
+</body>
+</html>
